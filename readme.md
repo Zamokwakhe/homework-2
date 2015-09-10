@@ -5,21 +5,21 @@ This homework will be turned in via a bitbucket repository. Start by making a ne
 Navigate to your home directory and clone the repository.
 
     cd
-	    git clone git@bitbucket.org:mgidden/homework-2
+	git clone git@bitbucket.org:mgidden/homework-2
 
 Now, instead of using _my_ remote, we will change it to use _your_ remote. Replace all instances of `<your username>` with your bitbucket user name.
 
     cd homework-2
-	    git remote rm origin
-		    git remote add origin git@bitbucket.org:<your username>/homework-2
-			    git push origin master
+	git remote rm origin
+	git remote add origin git@bitbucket.org:<your username>/homework-2
+	git push origin master
 
 ## Working on the Assignment
 
 You should do all of your work **in the homework-2 directory**. Navigate to the directory and start IPython notebook there.
 
     cd ~/homework-2
-	    ipython notebook
+	ipython notebook
 
 You will be creating new files in the assignment. You will also be changing and updating files. Make sure to update your repository frequently by
 
