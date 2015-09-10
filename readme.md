@@ -1,8 +1,10 @@
 # Set Up
 
-This homework will be turned in via a bitbucket repository. Start by making a new repository named `homework-2` in bitbucket. You must make this a _public_ repository. **Make sure it is public!**
+This homework will be turned in via a bitbucket repository.
 
-Navigate to your home directory and clone the repository.
+Start by _creating_ a new repository named `homework-2` in your bitbucket like we did in class. You must make this a _public_ repository. **Make sure it is public!**
+
+Navigate to your home directory and clone _my_ repository.
 
     cd
 	git clone git@bitbucket.org:mgidden/homework-2
@@ -23,13 +25,17 @@ You should do all of your work **in the homework-2 directory**. Navigate to the 
 
 You will be creating new files in the assignment. You will also be changing and updating files. Make sure to update your repository frequently by
 
-- `git add`ing updated files
-- `git commit`ing with an appropriate message and
-- `git push`ing them to your bitbucket repository.
+- `git add`-ing updated files
+- `git commit`-ing with an appropriate message and
+- `git push`-ing them to your bitbucket repository.
 
 ## Turning in the Assignment
 
-The tutors will send out an email to turn in the assignment. Respond to that email with the git command to clone your finished assignment. The command should clone your repository into a new folder named `<your username>`. For example, my turn-in email would have the following line
+The tutors will send out an email to turn in the assignment. Respond to that email with the git command to clone your finished assignment. The command should clone your repository into a new folder named `<your username>`.
+
+    git clone git@bitbucket.org:<your username>/homework-2 <your username>
+
+For example, my turn-in email would have the following line
 
     git clone git@bitbucket.org:mgidden/homework-2 mgidden
 
