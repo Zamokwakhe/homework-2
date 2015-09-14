@@ -25,27 +25,20 @@ def std(lst):
 		Sum  = Sum +mt.pow((lst[i]-mn),2)
 	return np.sqrt(Sum/(len(lst)-1))
 
-def avg_range(x):
-	total = 0.0
-	length = 0.0
-	average = 0.0
+#Code with the help of Robin and myself
+def avg_range(lst):
+	#empty lists
+	files = []
+	ranges = []
 	
-	#taking file name
-	filename = x
-	
-	#opening file
-	infile = open(filename, 'r')
-	
-	#reading file
-	contents = infile.read()
-	for line in infile:
-		amount = float(line)
-		total += amount
-		length = length + 1
-	average = total / (length +1)
-	infile.close()
-	return average 
+	for location in lst:
+		files.append(open(location))
 
+	for entry in files:
+		for line in entry:
+			if "Range" in line:
+				ranges.append(float(line[7]))
+	return sum(ranges)/len(ranges)
 
 if __name__ == "__main__":
 	main()
